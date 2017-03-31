@@ -2,4 +2,10 @@ welcome: Welcome to Job Search. What type of jobs would you like me to search fo
 
 reprompt_welcome: I didn't quite get that. What type of jobs would you like me to search for?
 
-search_job_response: I found {{ number }} jobs 
+search_job_response: I found some jobs for you. Would you like to hear the first one?
+
+no_jobs_found: I did not find any {{ role }} jobs
+
+no_jobs_found_city: I did not find any {{ role }} jobs in {{ city }}
+
+job_listing: I found a {role} job for you in {company}

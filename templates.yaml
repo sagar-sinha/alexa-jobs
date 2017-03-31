@@ -1,0 +1,5 @@
+welcome: Welcome to Job Search. What type of jobs would you like me to search for?
+
+reprompt_welcome: I didn't quite get that. What type of jobs would you like me to search for?
+
+search_job_response: I found {{ number }} jobs 

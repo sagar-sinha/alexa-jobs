@@ -45,7 +45,7 @@ def search_jobs(role, city):
                 role=role
             )
             return response
-    response = render_template('search_job_response')
+    response = render_template('search_job_response', number=len(jobs))
 
     job_objects = map(_get_job_object, jobs)
 
@@ -54,7 +54,7 @@ def search_jobs(role, city):
     return question(response)
 
 
-@ask.intent('NextIntent')
+@ask.intent('AMAZON.YesIntent')
 def next_job():
     # assuming we have saved jobs
     # TODO: handle case where we do not have jobs
@@ -65,17 +65,14 @@ def next_job():
     role = current_job['title']
     company = current_job['company']
 
-    return statement(
+    return question(
         render_template(
             'job_listing',
-            role=title,
+            role=role,
             company=company
         )
     )
 
-
-# @ask.intent('YesIntent'):
-# def yes_intent()
 
 if __name__ == '__main__':
     app.run(debug=True)

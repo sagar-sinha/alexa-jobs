@@ -13,3 +13,6 @@ job_listing: There is a {{ role }} job for you in {{company}} in {{ city }}. You
 show_experience: Experience for the job is, {{ experience }} .For this job, you could listen to the requirements, experience again, or could hear the next job? What would you like to do?
 #
 show_technologies: Requirements for the job are, {{ technologies }}. For this job, you could listen to the requirements again, experience, or could hear the next job? What would you like to do?
+
+
+bye: Thank you for using Job Search!

@@ -12,16 +12,22 @@ app = Flask(__name__)
 ask = Ask(app, "/alexa")
 
 
+def strip_non_ascii(string):
+    ''' Returns the string without non ASCII characters'''
+    stripped = (c for c in string if 0 < ord(c) < 127)
+    return ''.join(stripped)
+
+
 def _get_job_object(job):
     description = job['description'].lower()
     technologies = _get_technologies(description)
-    # experience = _get_experience(description)
+    experience = _get_experience(description)
     return {
         'company': job['company'],
         'title': job['title'],
-        'how_to_apply': job['how_to_apply'],
-        'url': job['url'],
-        # 'experience': experience,
+        # 'how_to_apply': job['how_to_apply'],
+        # 'url': job['url'],
+        'experience': strip_non_ascii(experience),
         'technologies': technologies,
     }
 
@@ -34,7 +40,10 @@ def _get_technologies(description):
     return ', '.join(technologies)
 
 def _get_experience(description):
-    matches = re.findall(r'([0-9]\+? years [a-zA-Z0-9\ -]{,})', description)
+    matches = re.findall(
+        r'([0-9]\+? years [a-zA-Z0-9\ -]{,})',
+        strip_non_ascii(description)
+    )
     if matches:
         return ', '.join(matches)
     else:
@@ -142,6 +151,12 @@ def show_technologies():
         technologies=current_job['technologies']
     )
     return question(response)
+
+
+@ask.intent('AMAZON.StopIntent')
+def stop():
+    response = render_template('bye')
+    return statement(response)
 
 if __name__ == '__main__':
     app.run(debug=True)

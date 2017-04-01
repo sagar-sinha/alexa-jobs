@@ -1,0 +1,20 @@
+SearchJobsIntent get {Software Engineer|Role} jobs for me
+SearchJobsIntent find {Software Engineer|Role} jobs for me
+SearchJobsIntent find a {Software Engineer|Role} job for me
+SearchJobsIntent find me a {Software Engineer|Role} job
+
+NextJobIntent show me the next job
+NextJobIntent tell me about the next job
+NextJobIntent next job
+NextJobIntent next
+
+TechnologiesIntent tell me about the technologies
+TechnologiesIntent what technologies does the job need
+TechnologiesIntent what are the technologies
+TechnologiesIntent what technologies
+TechnologiesIntent technologies
+TechnologiesIntent what technologies will I need
+
+ExperienceIntent tell me about the experience
+ExperienceIntent experience
+ExperienceIntent what experience is needed for this job

@@ -12,8 +12,8 @@ job_listing: There is a {{ role }} job for you in {{company}} in {{ city }}. Wha
 
 show_experience: Experience for the job is, {{ experience }}. What would you like to do next?
 
-show_technologies: Requirements for the job are, {{ technologies }}. What would you like to do next?
+show_technologies: Technologies for the job are, {{ technologies }}. What would you like to do next?
 
 bye: Thank you for using Job Search
 
-help: You can use Job Search to search for jobs. You can start by saying something like 'Find me a software engineer job in San Francisco'. Specifying the city is optional, but recommended. Job Search will find jobs for you based on your query. Say 'Yes' to read out the first one. After that, you can either ask for the requirements for the job, or experience for the job, or hear the next job, or stop.
+help: You can use Job Search to search for jobs. You can start by saying something like 'Find me a software engineer job in San Francisco'. Specifying the city is optional, but recommended. Job Search will find jobs for you based on your query. Say 'Yes' to read out the first one. After that, you can either ask for the requirements for the job, or experience for the job, or hear the next job, or stop. What would you like to do?

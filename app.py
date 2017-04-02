@@ -163,7 +163,7 @@ def stop():
 @ask.intent('AMAZON.HelpIntent')
 def help():
     response = render_template('help')
-    return statement(response)
+    return question(response)
 
 if __name__ == '__main__':
     app.run(debug=True)

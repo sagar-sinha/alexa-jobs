@@ -1,4 +1,4 @@
-welcome: Welcome to Job Search. What type of jobs would you like me to search for?
+welcome: Welcome to Job Search. You can start by asking me to look for jobs, or ask for help. What would you like to do?
 
 reprompt_welcome: I didn't quite get that. What type of jobs would you like me to search for?
 
@@ -8,10 +8,12 @@ no_jobs_found: I did not find any {{ role }} jobs
 
 no_jobs_found_city: I did not find any {{ role }} jobs in {{ city }}
 
-job_listing: There is a {{ role }} job for you in {{company}} in {{ city }}. You could listen to the requirements, experience, or could hear the next job? What would you like to do?
+job_listing: There is a {{ role }} job for you in {{company}} in {{ city }}. What would you like to do next?
 
-show_experience: Experience for the job is, {{ experience }} .For this job, you could listen to the technologies, experience again, hear the next job, or stop? What would you like to do?
+show_experience: Experience for the job is, {{ experience }}. What would you like to do next?
 
-show_technologies: Requirements for the job are, {{ technologies }}. For this job, you could listen to the technologies again, experience, hear the next job, or stop? What would you like to do?
+show_technologies: Requirements for the job are, {{ technologies }}. What would you like to do next?
 
 bye: Thank you for using Job Search
+
+help: You can use Job Search to search for jobs. You can start by saying something like 'Find me a software engineer job in San Francisco'. Specifying the city is optional, but recommended. Job Search will find jobs for you based on your query. Say 'Yes' to read out the first one. After that, you can either ask for the requirements for the job, or experience for the job, or hear the next job, or stop.

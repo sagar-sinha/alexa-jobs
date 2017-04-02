@@ -9,7 +9,7 @@ import json
 import re
 
 app = Flask(__name__)
-ask = Ask(app, "/alexa")
+ask = Ask(app, "/")
 
 
 def strip_non_ascii(string):
@@ -157,6 +157,12 @@ def show_technologies():
 @ask.intent('AMAZON.StopIntent')
 def stop():
     response = render_template('bye')
+    return statement(response)
+
+
+@ask.intent('AMAZON.HelpIntent')
+def help():
+    response = render_template('help')
     return statement(response)
 
 if __name__ == '__main__':

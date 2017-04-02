@@ -6,6 +6,10 @@ SearchJobsIntent find a {Software Engineer|Role} job for me
 SearchJobsIntent find a {Software Engineer|Role} job for me in {city}
 SearchJobsIntent find me a {Software Engineer|Role} job
 SearchJobsIntent find me a {Software Engineer|Role} job in {city}
+SearchJobsIntent a {Software Engineer|Role} job
+SearchJobsIntent a {Software Engineer|Role} job in {city}
+SearchJobsIntent {Software Engineer|Role} job
+SearchJobsIntent {Software Engineer|Role} job in {city}
 
 TechnologiesIntent tell me about the technologies
 TechnologiesIntent what technologies does the job need

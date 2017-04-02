@@ -66,6 +66,7 @@ def new_ask():
 
 @ask.intent('SearchJobsIntent')
 def search_jobs(role, city):
+    print city
     jobs = Github.get_jobs(query=role, location=city)
 
     if len(jobs) == 0:

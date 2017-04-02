@@ -15,4 +15,4 @@ show_experience: Experience for the job is, {{ experience }} .For this job, you 
 show_technologies: Requirements for the job are, {{ technologies }}. For this job, you could listen to the requirements again, experience, or could hear the next job? What would you like to do?
 
 
-bye: Thank you for using Job Search!
+bye: Thank you for using Job Search

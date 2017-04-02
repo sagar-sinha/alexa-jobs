@@ -10,9 +10,8 @@ no_jobs_found_city: I did not find any {{ role }} jobs in {{ city }}
 
 job_listing: There is a {{ role }} job for you in {{company}} in {{ city }}. You could listen to the requirements, experience, or could hear the next job? What would you like to do?
 
-show_experience: Experience for the job is, {{ experience }} .For this job, you could listen to the requirements, experience again, or could hear the next job? What would you like to do?
-#
-show_technologies: Requirements for the job are, {{ technologies }}. For this job, you could listen to the requirements again, experience, or could hear the next job? What would you like to do?
+show_experience: Experience for the job is, {{ experience }} .For this job, you could listen to the technologies, experience again, hear the next job, or stop? What would you like to do?
 
+show_technologies: Requirements for the job are, {{ technologies }}. For this job, you could listen to the technologies again, experience, hear the next job, or stop? What would you like to do?
 
 bye: Thank you for using Job Search

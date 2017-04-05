@@ -1,3 +1,4 @@
+SearchJobsIntent look for jobs
 SearchJobsIntent get {Software Engineer|Role} jobs for me
 SearchJobsIntent get {Software Engineer|Role} jobs for me in {city}
 SearchJobsIntent find {Software Engineer|Role} jobs for me

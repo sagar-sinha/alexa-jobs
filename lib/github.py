@@ -2,7 +2,7 @@ import requests
 
 class Github:
     @staticmethod
-    def get_jobs(query, location=None):
+    def get_jobs(query=None, location=None):
         url = 'https://jobs.github.com/positions.json'
 
         params = {

@@ -165,5 +165,15 @@ def help():
     response = render_template('help')
     return question(response)
 
+@ask.intent('AMAZON.NoIntent')
+def no():
+    response = render_template('bye')
+    return statement(response)
+
+@ask.intent('AMAZON.CancelIntent')
+def cancel():
+    response = render_template('bye')
+    return statement(response)
+
 if __name__ == '__main__':
     app.run(debug=True)
